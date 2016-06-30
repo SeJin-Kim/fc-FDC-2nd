@@ -1,0 +1,22 @@
+{
+  "variables": {
+    "lang": "ko",
+    "locale": "ko-KR"
+  },
+
+  "snippets": {
+    "html": {
+      "snippets": {
+
+      },
+      "abbreviations": {
+      }
+    },
+    "css": {
+      "snippets": {
+
+      },
+      "abbreviations": {
+      }
+    }
+}
