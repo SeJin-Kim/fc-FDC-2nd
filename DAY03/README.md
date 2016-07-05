@@ -8,6 +8,7 @@
 - **HTML5** 문서 구조화
 - **CSS3** 문서 스타일링
 - **Learn by Doing** 웹 타이포그래피 디자인
+- [Sublime Text 3 Portable](https://drive.google.com/file/d/0BzHW7hS-WHhTR2ZHNTlUYk0zQVk/view)
 
 -
 
