@@ -77,7 +77,7 @@
 
 수업 과정에서 만들어 본 Typography System 결과물
 
-![typography-system](base-design/typography-system.gif)
+![typography-system](../Assets/vertical-rhythm.gif)
 
 -
 
