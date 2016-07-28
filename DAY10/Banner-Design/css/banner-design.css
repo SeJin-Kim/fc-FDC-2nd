@@ -22,13 +22,20 @@ body {
   text-shadow: 0 0 4px rgba(0,0,0,0.6);
 }
 
+.sn-banner h1::selection {
+  background-color: #4d222c;
+  color: #cc92a1;
+  text-shadow: none;
+}
+
 .sn-banner * {
   position: absolute;
   /*transition: 속성 지속시간 이징곡선 지연시간;*/
-  transition: all 0.4s ease-out;
+  /*transition: all 400ms ease-out 0ms;*/
 }
 
 .sn-banner h1 {
+  opacity: 0;
   width: 320px;
   top: 28px;
   left: 121px;
@@ -46,21 +53,30 @@ body {
 .sn-banner [src$="apes.png"] {
   bottom: 93px;
   left: 814px;
+  transition: all 0.6s cubic-bezier(0.03, 0.42, 0.32, 1.01);
 }
 .sn-banner [src$="golliras.png"] {
   bottom: 24px;
   left: -519px;
+  transition: all 0.5s cubic-bezier(0, 0, 0.36, 0.96) 0.2s;
 }
 .sn-banner [src$="kingkong.png"] {
   top: 328px;
   right: 10px;
+  transition: all 0.5s cubic-bezier(0.67, 0, 0.21, 0.98) 0.4s;
 }
 .sn-banner [src$="sn-logo.png"] {
   top: -112px;
   left: 18px;
+  transition: all 0.8s cubic-bezier(0, 0.84, 0.68, 1.19) 0.7s;
 }
 
 /* 애니메이션이 종료된 상태의 위치 */
+.sn-banner.anim-fin h1,
+.sn-banner:hover h1 {
+  animation: fadeIn 0.3s ease-out forwards alternate 1.5s;
+}
+
 .sn-banner.anim-fin [src$="apes.png"],
 .sn-banner:hover [src$="apes.png"] {
   bottom: 93px;
@@ -77,7 +93,18 @@ body {
   right: 10px;
 }
 .sn-banner.anim-fin [src$="sn-logo.png"],
-.sn-banner:hover[src$="sn-logo.png"] {
+.sn-banner:hover [src$="sn-logo.png"] {
   top: 18px;
   left: 18px;
+}
+
+/* 애니메이션 */
+/* animation: 이름 지속시간 이징곡선 지연시간 */
+
+/* 애니메이션 정의 */
+/* 페이드인/아웃 */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0); }
+  50% { opacity: 0.4; transform: scale(1.5); }
+  100% { opacity: 1; transform: scale(1); }
 }
