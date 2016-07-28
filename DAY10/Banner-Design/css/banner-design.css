@@ -1,7 +1,13 @@
+@charset "utf-8";
+
 body {
   background: #000;
 }
 
+/**
+ * --------------------------------
+ * .sn-banner
+ * ----------------------------- */
 .sn-banner {
   overflow: hidden;
   position: absolute;
@@ -9,14 +15,17 @@ body {
   height: 320px;
   top: 50%;
   left: 50%;
-  /*margin: -160px 0 0 -400px;*/
   margin-top: -160px;
   margin-left: -400px;
   background: url("../images/BG.jpg") no-repeat;
+  /* 텍스트 그림자 */
+  text-shadow: 0 0 4px rgba(0,0,0,0.6);
 }
 
 .sn-banner * {
   position: absolute;
+  /*transition: 속성 지속시간 이징곡선 지연시간;*/
+  transition: all 0.4s ease-out;
 }
 
 .sn-banner h1 {
@@ -33,19 +42,42 @@ body {
   color: #fff;
 }
 
+/* 애니메이션 시작 위치 */
 .sn-banner [src$="apes.png"] {
   bottom: 93px;
-  left: 4px;
+  left: 814px;
 }
 .sn-banner [src$="golliras.png"] {
   bottom: 24px;
-  left: 11px;
+  left: -519px;
 }
 .sn-banner [src$="kingkong.png"] {
-  top: 28px;
+  top: 328px;
   right: 10px;
 }
 .sn-banner [src$="sn-logo.png"] {
+  top: -112px;
+  left: 18px;
+}
+
+/* 애니메이션이 종료된 상태의 위치 */
+.sn-banner.anim-fin [src$="apes.png"],
+.sn-banner:hover [src$="apes.png"] {
+  bottom: 93px;
+  left: 4px;
+}
+.sn-banner.anim-fin [src$="golliras.png"],
+.sn-banner:hover [src$="golliras.png"] {
+  bottom: 24px;
+  left: 11px;
+}
+.sn-banner.anim-fin [src$="kingkong.png"],
+.sn-banner:hover [src$="kingkong.png"] {
+  top: 28px;
+  right: 10px;
+}
+.sn-banner.anim-fin [src$="sn-logo.png"],
+.sn-banner:hover[src$="sn-logo.png"] {
   top: 18px;
   left: 18px;
 }
