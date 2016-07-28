@@ -1,0 +1,51 @@
+body {
+  background: #000;
+}
+
+.sn-banner {
+  overflow: hidden;
+  position: absolute;
+  width: 800px;
+  height: 320px;
+  top: 50%;
+  left: 50%;
+  /*margin: -160px 0 0 -400px;*/
+  margin-top: -160px;
+  margin-left: -400px;
+  background: url("../images/BG.jpg") no-repeat;
+}
+
+.sn-banner * {
+  position: absolute;
+}
+
+.sn-banner h1 {
+  width: 320px;
+  top: 28px;
+  left: 121px;
+  margin: 0;
+  font-family: "Spoqa Han Sans", Sans-Serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 33px;
+  line-height: 1.060606061;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.sn-banner [src$="apes.png"] {
+  bottom: 93px;
+  left: 4px;
+}
+.sn-banner [src$="golliras.png"] {
+  bottom: 24px;
+  left: 11px;
+}
+.sn-banner [src$="kingkong.png"] {
+  top: 28px;
+  right: 10px;
+}
+.sn-banner [src$="sn-logo.png"] {
+  top: 18px;
+  left: 18px;
+}
