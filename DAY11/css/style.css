@@ -6,7 +6,7 @@ html {
   box-sizing: border-box;
 }
 *, *:before, *:after { box-sizing: inherit; }
-body { margin: 0; font-size: 1rem; line-height: 1.5; }
+body { margin: 0; font-family: Arial; font-size: 1rem; line-height: 1.5; }
 body.show-grid::before {
   content: '';
   position: absolute;
@@ -28,6 +28,20 @@ $content-06-input:              #DADEE7;
 $content-06-input-text:         #A5A5A7;
 $footer-bg:                     #D5D2D0;
 */
+
+/* 공통 모듈(조립 가능한 작은 단위의 부품, 스타일 클래스) */
+.wrapper {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+.lt-ie8 .clearfix { zoom: 1; }
+
 /**
  * --------------------------------
  * .page-header
@@ -35,4 +49,48 @@ $footer-bg:                     #D5D2D0;
 .page-header {
   background: #4D4A49;
   height: 120px;
+}
+
+.page-header * {
+  margin-top: 0;
+}
+
+.page-header a {
+  display: block;
+}
+
+.page-header .brand {
+  margin-top: 30px;
+  float: left;
+}
+
+.page-header img {
+  vertical-align: bottom;
+}
+
+/**
+ * --------------------------------
+ * .page-gnb
+ */
+.page-gnb {
+  float: right;
+  margin-top: 52px;
+}
+.page-gnb ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.page-gnb li {
+  float: left;
+  margin-left: 64px;
+}
+.page-gnb a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.125;
 }
