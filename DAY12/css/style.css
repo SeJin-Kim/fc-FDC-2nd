@@ -19,7 +19,7 @@ body.show-grid::before {
   background: url("../images/pattern-80-20.png");
 }
 body.show-grid:hover::before {
-  background: none;
+  /*background: none;*/
 }
 /*
 $header-bg:                     #4D4A49;
@@ -120,6 +120,7 @@ $footer-bg:                     #D5D2D0;
 }
 
 .content-01 .video {
+  position: relative;
   height: 408px;
   text-align: center;
   line-height: 408px;
@@ -129,7 +130,22 @@ $footer-bg:                     #D5D2D0;
   vertical-align: middle;
 }
 
-.content-01 .btn-play {
+.content-01 .btn-play,
+.content-01 .btn-next,
+.content-01 .btn-prev {
   border: none;
   background: transparent;
+}
+
+.content-01 .btn-next,
+.content-01 .btn-prev {
+  position: absolute;
+  top: 162px;
+  padding: 0;
+}
+.content-01 .btn-next {
+  right: 10px;
+}
+.content-01 .btn-prev {
+  left: 10px;
 }
