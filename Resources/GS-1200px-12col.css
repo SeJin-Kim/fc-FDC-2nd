@@ -1,0 +1,31 @@
+/*! GS-1200px-12col.css © yamoo9.net, 2016 */
+
+/**
+ * --------------------------------
+ * 컨테이너 모듈
+ */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**
+ * --------------------------------
+ * 로우 모듈
+ */
+.row:after,
+.row::after {
+  content: '';
+  display: block;
+  clar: both;
+}
+
+/**
+ * --------------------------------
+ * 컬럼 모듈
+ */
+.col-1 {
+  float: left;
+  width: 100px;
+}
