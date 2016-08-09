@@ -42,153 +42,51 @@
  * --------------------------------
  * 컬럼 모듈
  */
-.col-1 {
-  float: left;
-  width: 100px;
-}
-.col-2 {
-  float: left;
-  width: 200px;
-}
-.col-3 {
-  float: left;
-  width: 300px;
-}
-.col-4 {
-  float: left;
-  width: 400px;
-}
-.col-5 {
-  float: left;
-  width: 500px;
-}
-.col-6 {
-  float: left;
-  width: 600px;
-}
-.col-7 {
-  float: left;
-  width: 700px;
-}
-.col-8 {
-  float: left;
-  width: 800px;
-}
-.col-9 {
-  float: left;
-  width: 900px;
-}
-.col-10 {
-  float: left;
-  width: 1000px;
-}
-.col-11 {
-  float: left;
-  width: 1100px;
-}
-.col-12 {
-  float: left;
-  width: 1200px;
-}
+[class*="col-"] { float: left; }
+.col-1  { width: 100px;  }
+.col-2  { width: 200px;  }
+.col-3  { width: 300px;  }
+.col-4  { width: 400px;  }
+.col-5  { width: 500px;  }
+.col-6  { width: 600px;  }
+.col-7  { width: 700px;  }
+.col-8  { width: 800px;  }
+.col-9  { width: 900px;  }
+.col-10 { width: 1000px; }
+.col-11 { width: 1100px; }
+.col-12 { width: 1200px; }
 
 /**
  * --------------------------------
  * 푸쉬(Push)/풀(Pull) 모듈
  */
-.push-1 {
-  position: relative;
-  left: 100px;
-}
-.push-2 {
-  position: relative;
-  left: 200px;
-}
-.push-3 {
-  position: relative;
-  left: 300px;
-}
-.push-4 {
-  position: relative;
-  left: 400px;
-}
-.push-5 {
-  position: relative;
-  left: 500px;
-}
-.push-6 {
-  position: relative;
-  left: 600px;
-}
-.push-7 {
-  position: relative;
-  left: 700px;
-}
-.push-8 {
-  position: relative;
-  left: 800px;
-}
-.push-9 {
-  position: relative;
-  left: 900px;
-}
-.push-10 {
-  position: relative;
-  left: 1000px;
-}
-.push-11 {
-  position: relative;
-  left: 1100px;
-}
-.push-12 {
-  position: relative;
-  left: 1200px;
-}
 
-.pull-1 {
-  position: relative;
-  left: -100px;
-}
-.pull-2 {
-  position: relative;
-  left: -200px;
-}
-.pull-3 {
-  position: relative;
-  left: -300px;
-}
-.pull-4 {
-  position: relative;
-  left: -400px;
-}
-.pull-5 {
-  position: relative;
-  left: -500px;
-}
-.pull-6 {
-  position: relative;
-  left: -600px;
-}
-.pull-7 {
-  position: relative;
-  left: -700px;
-}
-.pull-8 {
-  position: relative;
-  left: -800px;
-}
-.pull-9 {
-  position: relative;
-  left: -900px;
-}
-.pull-10 {
-  position: relative;
-  left: -1000px;
-}
-.pull-11 {
-  position: relative;
-  left: -1100px;
-}
-.pull-12 {
-  position: relative;
-  left: -1200px;
-}
+/* <div class=".... push- ...."></div> */
+[class*="push-"],
+[class*="pull-"] { position: relative; }
+
+.push-1  { left: 100px;  }
+.push-2  { left: 200px;  }
+.push-3  { left: 300px;  }
+.push-4  { left: 400px;  }
+.push-5  { left: 500px;  }
+.push-6  { left: 600px;  }
+.push-7  { left: 700px;  }
+.push-8  { left: 800px;  }
+.push-9  { left: 900px;  }
+.push-10 { left: 1000px; }
+.push-11 { left: 1100px; }
+.push-12 { left: 1200px; }
+
+.pull-1  { left: -100px;  }
+.pull-2  { left: -200px;  }
+.pull-3  { left: -300px;  }
+.pull-4  { left: -400px;  }
+.pull-5  { left: -500px;  }
+.pull-6  { left: -600px;  }
+.pull-7  { left: -700px;  }
+.pull-8  { left: -800px;  }
+.pull-9  { left: -900px;  }
+.pull-10 { left: -1000px; }
+.pull-11 { left: -1100px; }
+.pull-12 { left: -1200px; }
