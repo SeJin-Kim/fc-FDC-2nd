@@ -18,7 +18,7 @@ body.show-leading::before {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(transparent 23px, #7045cf 23px);
+  background: linear-gradient(transparent 23px, hsla(239, 59%, 54%, 0.45) 23px);
   background-size: 1px 24px;
 }
 
@@ -39,7 +39,7 @@ body.show-leading::before {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(90deg, transparent 10px, hsla(86, 66%, 65%, 0.45) 10px, hsla(86, 66%, 65%, 0.45) 70px, transparent 70px);
+  background: linear-gradient(90deg, transparent 10px, hsla(186, 66%, 65%, 0.45) 10px, hsla(186, 66%, 65%, 0.15) 70px, transparent 70px);
   background-size: 80px 1px;
 }
 
@@ -68,3 +68,60 @@ body.show-leading::before {
 .col-10 { width: 780px; }
 .col-11 { width: 860px; }
 .col-12 { width: 940px; }
+
+[class*="push-"],
+[class*="pull-"] {
+  position: relative;
+}
+
+.push-1 { left: 80px; }
+.push-2 { left: 160px; }
+.push-3 { left: 240px; }
+.push-4 { left: 320px; }
+.push-5 { left: 400px; }
+.push-6 { left: 480px; }
+.push-7 { left: 560px; }
+.push-8 { left: 640px; }
+.push-9 { left: 720px; }
+.push-10 { left: 800px; }
+.push-11 { left: 880px; }
+.push-12 { left: 960px; }
+
+.pull-1 { left: -80px; }
+.pull-2 { left: -160px; }
+.pull-3 { left: -240px; }
+.pull-4 { left: -320px; }
+.pull-5 { left: -400px; }
+.pull-6 { left: -480px; }
+.pull-7 { left: -560px; }
+.pull-8 { left: -640px; }
+.pull-9 { left: -720px; }
+.pull-10 { left: -800px; }
+.pull-11 { left: -880px; }
+.pull-12 { left: -960px; }
+
+.prefix-1 { margin-left: 90px; }
+.prefix-2 { margin-left: 170px; }
+.prefix-3 { margin-left: 250px; }
+.prefix-4 { margin-left: 330px; }
+.prefix-5 { margin-left: 410px; }
+.prefix-6 { margin-left: 490px; }
+.prefix-7 { margin-left: 570px; }
+.prefix-8 { margin-left: 650px; }
+.prefix-9 { margin-left: 730px; }
+.prefix-10 { margin-left: 810px; }
+.prefix-11 { margin-left: 890px; }
+.prefix-12 { margin-left: 970px; }
+
+.suffix-1 { margin-right: 100px; }
+.suffix-2 { margin-right: 180px; }
+.suffix-3 { margin-right: 260px; }
+.suffix-4 { margin-right: 340px; }
+.suffix-5 { margin-right: 420px; }
+.suffix-6 { margin-right: 500px; }
+.suffix-7 { margin-right: 580px; }
+.suffix-8 { margin-right: 660px; }
+.suffix-9 { margin-right: 740px; }
+.suffix-10 { margin-right: 820px; }
+.suffix-11 { margin-right: 900px; }
+.suffix-12 { margin-right: 980px; }
