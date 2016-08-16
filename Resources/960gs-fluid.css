@@ -16,8 +16,8 @@ body.show-leading::before {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(transparent 23px, hsla(239, 59%, 54%, 0.45) 23px);
-  background-size: 1px 24px;
+  background: linear-gradient(transparent 95.833333333%, hsla(239, 59%, 54%, 0.45) 95.833333333%);
+  background-size: 1px 1.5rem;
 }
 
 /* container 모듈 */

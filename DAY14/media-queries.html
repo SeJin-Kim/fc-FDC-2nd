@@ -7,24 +7,27 @@
   <link rel="stylesheet" href="../Resources/normalize.css">
   <link rel="stylesheet" href="../Resources/960gs-fluid.css">
   <style>
+    /* CSS3 미디어쿼리 */
+    /* 모바일 >> 데스크탑 시장 */
+    /* 모바일 우선주의 (Mobile First) */
+    /* 중단점 설계(Design) 0 - 800 - 1024 - 1200 */
     html {
-      font-size: 100%; /* 16px */
+      font-size: 70%; /* 16px */
+    }
+    @media screen and (min-width: 800px) {
+      html {
+        font-size: 110%;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      html {
+        font-size: 140%;
+      }
     }
     body {
-      background: #000;
-      color: #fff;
+      /*background: #000;*/
+      /*color: #fff;*/
       font: 1rem/1.5 "Spoqa Han Sans";
-    }
-    /*.page {
-      max-width: 1200px;
-    }*/
-
-    /* CSS3 미디어쿼리 */
-    @media screen and (max-width: 600px) {
-      body {
-        background: #f00;
-        color: #fff;
-      }
     }
   </style>
 </head>
