@@ -7,14 +7,27 @@
   <link rel="stylesheet" href="../Resources/normalize.css">
   <link rel="stylesheet" href="../Resources/rwd-grid.css">
   <style>
-    .box { background: #cecece; color: #212121; text-align: center; }
+    .box {
+      height: 30vh;
+      line-height: 30vh;
+      background: #cecece;
+      color: #212121;
+      text-align: center;
+    }
+    .box:nth-child(2n) {
+      background:#575757;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
 
   <div class="grid">
-    <div class="box m-1 t-1-2 offset-t-1-2 d-2-7 offset-d-1-7 w-3-8 offset-w-5-8">
-      mobile first
+    <div class="box m-1">
+      Mobile first
+    </div>
+    <div class="box m-1">
+      Desktop first
     </div>
   </div>
 
