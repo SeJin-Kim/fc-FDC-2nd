@@ -173,6 +173,10 @@
   .offset-m-5-12    { margin-left: calc( (100% / 12) * 5 ); }
   .offset-m-7-12    { margin-left: calc( (100% / 12) * 7 ); }
   .offset-m-11-12   { margin-left: calc( (100% / 12) * 11 ); }
+
+  .grid .m-hidden {
+    display: none;
+  }
 }
 
 /* Tablet (768px) -------------------------------------------------------- */
@@ -308,6 +312,10 @@
   .offset-t-5-12    { margin-left: calc( (100% / 12) * 5 ); }
   .offset-t-7-12    { margin-left: calc( (100% / 12) * 7 ); }
   .offset-t-11-12   { margin-left: calc( (100% / 12) * 11 ); }
+
+  .grid .t-hidden {
+    display: none;
+  }
 }
 
 /* Desktop (1024px) ------------------------------------------------------ */
@@ -443,6 +451,10 @@
   .offset-d-5-12    { margin-left: calc( (100% / 12) * 5 ); }
   .offset-d-7-12    { margin-left: calc( (100% / 12) * 7 ); }
   .offset-d-11-12   { margin-left: calc( (100% / 12) * 11 ); }
+
+  .grid .d-hidden {
+    display: none;
+  }
 }
 
 /* Wide Screen (1367px) -------------------------------------------------- */
@@ -450,10 +462,6 @@
 
   .grid-adapt {
     max-width: 1367px;
-  }
-
-  .grid .w-hidden {
-    display: none;
   }
 
   .w-1          { width: 100%; }
@@ -580,4 +588,8 @@
   .offset-w-5-12    { margin-left: calc( (100% / 12) * 5 ); }
   .offset-w-7-12    { margin-left: calc( (100% / 12) * 7 ); }
   .offset-w-11-12   { margin-left: calc( (100% / 12) * 11 ); }
+
+  .grid .w-hidden {
+    display: none;
+  }
 }
