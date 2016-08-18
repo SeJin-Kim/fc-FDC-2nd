@@ -452,6 +452,10 @@
     max-width: 1367px;
   }
 
+  .grid .w-hidden {
+    display: none;
+  }
+
   .w-1          { width: 100%; }
   .w-1-2,
   .w-2-4,
