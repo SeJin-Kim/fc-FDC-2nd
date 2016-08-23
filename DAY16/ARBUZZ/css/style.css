@@ -1,6 +1,26 @@
 /*! style.css © yamoo9.net, 2016 */
 
-body {
+.montserrat {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; /* Regular */
+}
+
+.PT-serif {
+  font-family: 'PT Serif', Serif;
+}
+
+
+/**
+ * --------------------------------
+ * .menu
+ * ----------------------------- */
+.menu .menu-tel {
+  margin-top: 40px;
+  padding-left: 26px;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  letter-spacing: 0.17em;
+  line-height: 1.818181818;
+  background: url("../images/icons/Icon-headset.svg") no-repeat 0 1px;
+  color: #3c3d48;
 }
