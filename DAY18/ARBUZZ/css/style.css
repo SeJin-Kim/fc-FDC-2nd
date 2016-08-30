@@ -278,23 +278,17 @@ html {
 
 /**
  * --------------------------------
- * .banner
+ * .banner-container
  * ----------------------------- */
-.banner-container {
-
-}
-
 .banner-container .banner-content {
   height: 300px;
   background: #fff;
   border-radius: 5px;
 }
-
 .banner-container .banner-content.double-height {
   float: right;
   height: 620px;
 }
-
 .banner-container .banner-headline {
   text-align: center;
   text-transform: uppercase;
@@ -302,24 +296,65 @@ html {
   letter-spacing: 0.1em;
   color: #3c3d48;
 }
-
 .banner-container .sub-headline {
   display: block;
   text-transform: lowercase;
   font-size: 15px;
   font-style: italic;
+  font-weight: 200;
+  letter-spacing: 0.1em;
   color: #5b5d69;
 }
-
+.banner-container a {
+  border-radius: 3px;
+  padding: 1.8em 4.8em;
+  background: #e36556;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 10px;
+  color: #fff;
+}
+.banner-container a:hover,
+.banner-container a:focus {
+  background: #8d342e;
+}
+/* .banner-shoes */
 .banner-container .banner-shoes {
   background: url("../images/banner/shoes.jpg") no-repeat;
 }
-
 .banner-container .banner-shoes .banner-headline {
   position: relative;
   top: 162px;
 }
-
+/* .banner-shoes */
+.banner-container .banner-leather-bags {
+  background: url("../images/banner/leather-bags.jpg") no-repeat;
+}
+/* .banner-leather-bags */
+.banner-container .banner-leather-bags .banner-headline {
+  margin-top: 43px;
+  margin-left: 40px;
+  text-align: left;
+}
+/* .banner-woman */
+.banner-container .banner-woman {
+  background: url("../images/banner/woman.jpg") no-repeat;
+  text-align: center;
+}
+.banner-container .banner-woman .banner-headline {
+  margin-top: 245px;
+  margin-bottom: 42px;
+}
+/* .banner-collection */
 .banner-container .banner-collection {
+  box-sizing: border-box;
   margin-top: 20px;
+  padding-left: 300px;
+  text-align: center;
+  background: url("../images/banner/collection.jpg") no-repeat;
+}
+.banner-container .banner-collection .banner-headline {
+  margin-top: 93px;
+  margin-bottom: 44px;
 }
