@@ -42,7 +42,6 @@ html {
   overflow-y: scroll;
 }
 
-
 /**
  * --------------------------------
  * 메뉴(menu) 영역
@@ -50,6 +49,7 @@ html {
 .menu {
   border-bottom: 1px solid #f2f2f2;
   color: #3c3d48;
+  background: #fff;
 }
 .menu .container {
   padding-top: 30px;
@@ -232,7 +232,7 @@ html {
   position: absolute;
   z-index: 100;
   left: 50%;
-  bottom: 30px;
+  bottom: 24px;
   /*background: #ff0;*/
   margin-left: -116px;
   /*transform: translateX(-50%);*/
@@ -249,4 +249,77 @@ html {
   float: left;
   margin-left: 21px;
   margin-right: 21px;
+}
+
+.carousel-indicator button {
+  box-sizing: border-box;
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #97979e;
+  padding: 0;
+  background: none;
+  border-radius: 50%;
+}
+
+.carousel-indicator .active button {
+  width: 11px;
+  height: 11px;
+  margin-top: -2px;
+  margin-left: -2px;
+  border: none;
+  background: #97979e;
+}
+
+.content-block {
+  padding-top: 20px;
+  background: #e5e5e5;
+}
+
+/**
+ * --------------------------------
+ * .banner
+ * ----------------------------- */
+.banner-container {
+
+}
+
+.banner-container .banner-content {
+  height: 300px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.banner-container .banner-content.double-height {
+  float: right;
+  height: 620px;
+}
+
+.banner-container .banner-headline {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  color: #3c3d48;
+}
+
+.banner-container .sub-headline {
+  display: block;
+  text-transform: lowercase;
+  font-size: 15px;
+  font-style: italic;
+  color: #5b5d69;
+}
+
+.banner-container .banner-shoes {
+  background: url("../images/banner/shoes.jpg") no-repeat;
+}
+
+.banner-container .banner-shoes .banner-headline {
+  position: relative;
+  top: 162px;
+}
+
+.banner-container .banner-collection {
+  margin-top: 20px;
 }
