@@ -84,7 +84,18 @@ html {
   font-size: 0.6875rem;
   letter-spacing: 0.17em;
   line-height: 1.818181818;
-  background: url("../images/icons/Icon-headset.svg") no-repeat 0 1px;
+  background: url("../images/icons/Icon-headset.png") no-repeat 0 1px;
+}
+@media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min--moz-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi)
+{
+  .menu .menu-tel {
+    background-image: url("../images/icons/Icon-headset@2x.png");
+    background-size: 16px 17px;
+  }
 }
 .menu .brand {
   margin-top: 10px;

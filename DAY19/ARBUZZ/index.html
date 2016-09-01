@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="UTF-8">
@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/960gs.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/polyfill.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/detectizr/2.2.0/detectizr.min.js"></script>
 </head>
 <body>
   <!-- MENU -->
@@ -89,7 +92,10 @@
         <div class="container">
           <h3 class="montserrat">arbuzz</h3>
           <p class="PT-serif">Up to 70% off sale</p>
-          <img src="images/header/woman.png" alt="woman">
+          <img
+            src="images/header/woman.png"
+            srcset="images/header/woman.png 1x, images/header/woman@2x.png 2x"
+            alt="woman">
         </div>
       </div>
       <!-- <div class="carousel-content">
@@ -340,5 +346,6 @@
 
 <!-- JavaScript-->
 <script src="js/toggleGrid.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
