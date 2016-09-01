@@ -11,7 +11,7 @@
 페이지의 폭:          960px
 */
 
-body.show-leading::before {content: '';position: absolute;z-index: 100000;top: 0;left: 0;width: 100%;height: 4000px;background: linear-gradient(transparent 9px, hsla(239, 59%, 54%, 0.45) 9px);background-size: 1px 10px;}
+body.show-leading::before {content: '';position: absolute;z-index: 100000;top: 0;left: 0;width: 100%;height: 3300px;background: linear-gradient(transparent 9px, hsla(239, 59%, 54%, 0.45) 9px);background-size: 1px 10px;}
 
 /* container 모듈 */
 .container { width: 960px; margin-left: auto; margin-right: auto; }
